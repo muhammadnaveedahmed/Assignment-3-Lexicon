@@ -8,6 +8,17 @@ namespace Assignment_3_Lexicon
 {
     class PersonHandler
     {
+        public void SetAge(Person person, int age)
+        {
+            PersonHandler.SetAge(person);
+
+        }
+
+        private static void SetAge(Person person)
+        {
+            throw new NotImplementedException("Age wouldn't not be a zero");
+        }
+
         public static Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
             Person person = new Person
