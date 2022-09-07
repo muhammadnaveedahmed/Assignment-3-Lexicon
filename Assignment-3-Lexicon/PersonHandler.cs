@@ -6,7 +6,20 @@ using System.Threading.Tasks;
 
 namespace Assignment_3_Lexicon
 {
-    internal class PersonHandler
+    class PersonHandler
     {
+        public Person CreatePerson(int age, string fName, string lName, double height, double weight)
+        {
+            Person person = new Person
+            {
+                Age = age,
+                FName = fName,
+                LName = lName,
+                Height = height,
+                Weight = weight
+            };
+
+            return person;
+        }
     }
 }
