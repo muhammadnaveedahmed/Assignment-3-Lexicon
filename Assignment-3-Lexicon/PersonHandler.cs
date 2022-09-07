@@ -8,7 +8,7 @@ namespace Assignment_3_Lexicon
 {
     class PersonHandler
     {
-        public Person CreatePerson(int age, string fName, string lName, double height, double weight)
+        public static Person CreatePerson(int age, string fName, string lName, double height, double weight)
         {
             Person person = new Person
             {

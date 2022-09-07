@@ -77,7 +77,7 @@ namespace ConsoleApp
                 var weight = Convert.ToDouble(weightValue);
 
                 PersonHandler personHandler = new PersonHandler();
-                personHandler.CreatePerson(age, fName, lName, height, weight);
+                PersonHandler.CreatePerson(age, fName, lName, height, weight);
 
                 Console.WriteLine("Person created.");
 
