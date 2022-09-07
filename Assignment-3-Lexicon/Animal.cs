@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment_3_Lexicon
 {
-    internal class Animal
+    class Animal
     {
     }
 }
