@@ -8,10 +8,18 @@ namespace Assignment_3_Lexicon
 {
     abstract class Animal
     {
-        private string? AniName;
+        private string? aniname;
         private int age;
         private double weight;
-        private int NrOfLegs; 
+        private int nroflegs;
+
+        public Animal(string aniname, int age, double weight, int nroflegs)
+        { 
+            AniName = aniname;
+            Age = age;
+            Weight = weight;
+            NrOfLegs = nroflegs;
+        }
 
         public int Age
         {
@@ -31,8 +39,8 @@ namespace Assignment_3_Lexicon
 
         public string? AniName
         {
-            get { return AniName; }
-            set { AniName = value;}
+            get { return aniname; }
+            set { aniname = value;}
         }
 
         
@@ -43,8 +51,10 @@ namespace Assignment_3_Lexicon
         }
         public int NrOfLegs
         {
-            get { return NrOfLegs; }
-            set { NrOfLegs = value; }
+            get { return nroflegs; }
+            set { nroflegs = value; }
         }
+        public abstract string DoSound();
+        
     }
 }
